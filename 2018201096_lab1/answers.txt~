@@ -1,0 +1,108 @@
+1. mkdir Kachra
+2. pwd
+   echo $HOME
+3.touch Gaitonde.txt
+  cat >Gaitonde.txt
+  Created by Vikram <Ctrl+D>
+4.mkdir Bhagwan
+  cd Bhagwan/
+  ls
+  touch Q4.txt
+5.touch firstfile.txt secondfile.txt thirdfile.txt
+  #to see the current permission details
+  ls -l 
+	
+  #full access(read,write execute) to all the users for firstfile.txt
+  chmod 777 firstfile.txt 
+
+  #Only read,write permissions (Not execute) to all the users for   
+  #secondfile.txt
+  chmod ugo=rw secondfile.txt
+  
+  #Only execute permission to all the users for   
+  chmod 111 thirdfile.txt
+  cat thirdfile.txt
+  output: (cat: thirdfile.txt: Permission denied)
+  sh thirdfile.txt
+  output: (sh: thirdfile.txt: Permission denied)
+  	
+6. cd ..
+   mkdir Setting
+   cd Setting/ 
+   touch Kukoo.txt Mandir.txt
+   
+
+7.cat >Kukoo.txt
+  Apun kukoo ke peechhe bhag raha ta <Ctrl+D>
+  cat >Mandir.txt
+  Desh mandir ke peechhe bhag raha ta <Ctrl+D>
+
+8. cat >>Kukoo.txt
+   By Ganesh Gaitonde <Ctrl+D>
+
+9. cat Kukoo.txt Mandir.txt
+
+mv ./Setting ./Bhagwan #to maintain file directory structure
+cd Bhagwan/Setting/ #change current directory
+
+11. touch .Anjali_Mathur.txt
+    cat >.Anjali_Mathur.txt 
+Agar mard field pe kaam karna chahe toh passion. Aur agar aurat karna chahe toh bhoot.<Ctrl+D>
+   chmod 444 .Anjali_Mathur.txt
+
+12. cat >Mandir.txt 
+Apun socha jab desh mein PM ka imaan nahi, toh apun seedhe raaste chal ke kya karega?. <Ctrl+D>
+
+13. mkdir -p ./ScriptingGames/Parulkar/Zoya ./ScriptingGames/Trivedi ./ScriptingGames/Sartaj/Megha ./ScriptingGames/GaneshGaitonde/Kukoo
+
+14. cp Mandir.txt ./ScriptingGames/Trivedi/
+    cp Kukoo.txt ./ScriptingGames/GaneshGaitonde/Kukoo/
+
+15. cp -R ./ScriptingGames ./CopyOfScriptingGames
+
+16. mv ./ScriptingGames/GaneshGaitonde/ ./ScriptingGames/Trivedi/
+
+17. ssh anuj.bansal@web.iiit.ac.in
+    yes
+    (Entered my password)
+    pwd
+    touch Confidential.txt
+
+
+18. pwd | tee Confidential.txt
+    logout
+
+19. scp anuj.bansal@web.iiit.ac.in:/pg/mtech/mtech2k18/cse/anuj.bansal/Confidential.txt .
+    (Entered my password)
+
+20. cat Confidential.txt | tr [a-z] [A-Z] | cat >Confidential1.txt 
+
+
+21. rm -r CopyOfScriptingGames
+
+22.tar -czvf 2018201096_lab1.tar.gz ./2018201096_lab1/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+  
+
+
+
+			
+	
+  	
+	
+	
+	
